@@ -22,9 +22,6 @@ export default observer(class App extends Component {
             this.props.colors.search();
         }
     };
-    handleQueryChange = (event, value) => {
-        this.props.colors.updateQuery(value);
-    };
 
     render() {
         const listItems = this.props.colors.results.map((color, index) => {
@@ -42,7 +39,7 @@ export default observer(class App extends Component {
                                floatingLabelFixed={true}
                                fullWidth={true}
                                value={this.props.colors.query}
-                               onChange={this.handleQueryChange}
+                               onChange={(event, value) => this.props.colors.updateQuery(value)}
                                onKeyDown={this.handleKeyDown}/>
                     <List>
                         {listItems}
