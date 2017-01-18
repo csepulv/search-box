@@ -14,18 +14,18 @@ import SearchResults from './SearchResults';
 
 export default observer(class App extends Component {
     static propTypes = {
-        colors: React.PropTypes.object.isRequired
+        searchStore: React.PropTypes.object.isRequired
     };
 
     render() {
         return (
             <MuiThemeProvider>
                 <div>
-                    <SearchInput query={this.props.colors.query}
-                                 onQueryUpdate={value => this.props.colors.updateQuery(value)}
-                                 onSubmit={() => this.props.colors.search()}
+                    <SearchInput query={this.props.searchStore.query}
+                                 onQueryUpdate={value => this.props.searchStore.updateQuery(value)}
+                                 onSubmit={() => this.props.searchStore.search()}
                     />
-                    <SearchResults colors={this.props.colors.results.slice()}/>
+                    <SearchResults results={this.props.searchStore.results.slice()}/>
                 </div>
             </MuiThemeProvider>
         );

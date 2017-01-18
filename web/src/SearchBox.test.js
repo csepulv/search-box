@@ -1,5 +1,5 @@
 import React from 'react';
-import App from './App';
+import App from './SearchBox';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {TextField, ListItem} from 'material-ui'
 
@@ -11,7 +11,7 @@ const muiTheme = getMuiTheme();
 const mountWithContext = (node) => mount(node, {context: {muiTheme}});
 
 it('shows search results', () => {
-    const wrapper = mountWithContext(<App colors={new Colors()} />);
+    const wrapper = mountWithContext(<App searchStore={new Colors()} />);
     const textField = wrapper.find(TextField);
     textField.props().onChange(null, 'Blue G');
     textField.props().onKeyDown({

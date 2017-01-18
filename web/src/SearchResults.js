@@ -1,11 +1,11 @@
 import React  from 'react';
 import {List, ListItem, Divider} from 'material-ui'
 
-const SearchResults = ({colors}) => {
-    const listItems = colors.map((color, index) => {
+const SearchResults = ({results}) => {
+    const listItems = results.map((result, index) => {
         return (
-            <div key={`color-div-${index}`}>
-                <ListItem key={`color-${index}`} primaryText={color.name} style={{backgroundColor: color.hex} }/>
+            <div key={`result-div-${index}`}>
+                <ListItem key={`result-${index}`} primaryText={result.name} style={{backgroundColor: result.hex} }/>
                 <Divider key={`divider-${index}`}/>
             </div>
         );
@@ -18,7 +18,7 @@ const SearchResults = ({colors}) => {
 };
 
 SearchResults.propTypes = {
-    colors: React.PropTypes.array.isRequired
+    results: React.PropTypes.array.isRequired
 };
 
 export default  SearchResults;
