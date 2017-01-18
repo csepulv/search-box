@@ -21,8 +21,11 @@ export default observer(class App extends Component {
         return (
             <MuiThemeProvider>
                 <div>
-                    <SearchInput colors={this.props.colors}/>
-                    <SearchResults colors={this.props.colors}/>
+                    <SearchInput query={this.props.colors.query}
+                                 onQueryUpdate={value => this.props.colors.updateQuery(value)}
+                                 onSubmit={() => this.props.colors.search()}
+                    />
+                    <SearchResults colors={this.props.colors.results.slice()}/>
                 </div>
             </MuiThemeProvider>
         );
