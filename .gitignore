@@ -4,7 +4,7 @@
 
 # Xcode
 #
-mobile/node_modules/jest-file-exists/build/
+color-mobile/node_modules/jest-file-exists/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
