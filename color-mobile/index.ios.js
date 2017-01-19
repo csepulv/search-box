@@ -6,17 +6,17 @@
 
 import React, {Component} from 'react';
 import {AppRegistry} from 'react-native';
-import SearchView from './SearchView'
 
 import Colors from './colors';
-const colors = new Colors();
 
-export default class SearchBoxMobile extends Component {
+import ColorMobileSearchBox from './ColorMobileSearchBox';
+
+export default class App extends Component {
 
     render() {
         return (
-            <SearchView colors={colors}/>
+            <ColorMobileSearchBox searchStore={new Colors()}/>
         );
     }
 }
-AppRegistry.registerComponent('SearchBoxMobile', () => SearchBoxMobile);
+AppRegistry.registerComponent('SearchBoxMobile', () => App);

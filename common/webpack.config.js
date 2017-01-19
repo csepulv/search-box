@@ -17,14 +17,21 @@ module.exports = {
         new CopyWebpackPlugin([
 
             // {output}/to/file.txt
-            {from: './crayola.json', to: '../../web/src/crayola.json'},
-            {from: './colors.js', to: '../../web/src/colors.js'},
+            {from: './crayola.json', to: '../../color-web/src/crayola.json'},
+            {from: './colors.js', to: '../../color-web/src/colors.js'},
 
-            {from: './SearchBox.js', to: '../../web/src/'},
-            {from: './Web*.js', to: '../../web/src/', flatten:true},
+            {from: './SearchBox.js', to: '../../color-web/src/'},
+            {from: './Web*.js', to: '../../color-web/src/', flatten:true},
 
             {from: './SearchBox.js', to: '../../github-web/src/'},
             {from: './Web*.js', to: '../../github-web/src', flatten:true},
+
+
+            {from: './crayola.json', to: '../../color-mobile/crayola.json'},
+            {from: './colors.js', to: '../../color-mobile/colors.js'},
+
+            {from: './SearchBox.js', to: '../../color-mobile/'},
+            {from: './Mobile*.js', to: '../../color-mobile/', flatten:true},
 
         ], {
 
