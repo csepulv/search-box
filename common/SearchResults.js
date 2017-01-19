@@ -1,13 +1,10 @@
 import React  from 'react';
-import {List, ListItem, Divider} from 'material-ui'
+import {List} from 'material-ui'
 
-const SearchResults = ({results}) => {
+const SearchResults = ({ListItem, results}) => {
     const listItems = results.map((result, index) => {
         return (
-            <div key={`result-div-${index}`}>
-                <ListItem key={`result-${index}`} primaryText={result.name} style={{backgroundColor: result.hex} }/>
-                <Divider key={`divider-${index}`}/>
-            </div>
+            <ListItem key={`result-div-${index}`} result={result} />
         );
     });
     return (
@@ -18,6 +15,7 @@ const SearchResults = ({results}) => {
 };
 
 SearchResults.propTypes = {
+    ListItem: React.PropTypes.func.isRequired,
     results: React.PropTypes.array.isRequired
 };
 

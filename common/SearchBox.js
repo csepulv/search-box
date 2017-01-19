@@ -12,23 +12,27 @@ injectTapEventPlugin();
 import SearchInput from './SearchInput';
 import SearchResults from './SearchResults';
 
-export default observer(class App extends Component {
-    static propTypes = {
-        searchStore: React.PropTypes.object.isRequired
-    };
+const SearchBox = (ListItem)=> {
+    return observer(class extends Component {
+        static propTypes = {
+            searchStore: React.PropTypes.object.isRequired
+        };
 
-    render() {
-        return (
-            <MuiThemeProvider>
-                <div>
-                    <SearchInput query={this.props.searchStore.query}
-                                 onQueryUpdate={value => this.props.searchStore.updateQuery(value)}
-                                 onSubmit={() => this.props.searchStore.search()}
-                    />
-                    <SearchResults results={this.props.searchStore.results.slice()}/>
-                </div>
-            </MuiThemeProvider>
-        );
-    }
-});
+        render() {
+            return (
+                <MuiThemeProvider>
+                    <div>
+                        <SearchInput query={this.props.searchStore.query}
+                                     onQueryUpdate={value => this.props.searchStore.updateQuery(value)}
+                                     onSubmit={() => this.props.searchStore.search()}
+                        />
+                        <SearchResults ListItem={ListItem} results={this.props.searchStore.results.slice()}/>
+                    </div>
+                </MuiThemeProvider>
+            );
+        }
+    });
+};
 
+
+export default SearchBox

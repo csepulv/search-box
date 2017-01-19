@@ -19,6 +19,7 @@ module.exports = {
             // {output}/to/file.txt
             {from: './colors.js', to: '../../web/src/colors.js'},
             {from: './crayola.json', to: '../../web/src/crayola.json'},
+            {from: './ColorListItem.js', to: '../../web/src/ColorListItem.js'},
             {from: './SearchBox.js', to: '../../web/src/SearchBox.js'},
             {from: './SearchResults.js', to: '../../web/src/SearchResults.js'},
             {from: './SearchInput.js', to: '../../web/src/SearchInput.js'},
