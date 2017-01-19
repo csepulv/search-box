@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchBox from './SearchBox';
+import WebSearchBox from './WebSearchBox';
 import './index.css';
 
 import {ListItem, Divider, Avatar} from 'material-ui'
@@ -20,7 +20,7 @@ RepoListItem.propTypes = {
     result: React.PropTypes.object.isRequired
 };
 
-const RepoSearchBox = SearchBox(RepoListItem);
+const RepoSearchBox = WebSearchBox(RepoListItem);
 
 ReactDOM.render(
     <RepoSearchBox searchStore={new GitHub()}/>,

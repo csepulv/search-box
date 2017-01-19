@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBox from './SearchBox';
+import WebSearchBox from './WebSearchBox';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import {TextField, ListItem} from 'material-ui'
 
@@ -13,7 +13,7 @@ const mountWithContext = (node) => mount(node, {context: {muiTheme}});
 
 it('shows search results', () => {
 
-    const ColorSearchBox = SearchBox(ColorListItem);
+    const ColorSearchBox = WebSearchBox(ColorListItem);
 
     const wrapper = mountWithContext(<ColorSearchBox searchStore={new Colors()} />);
     const textField = wrapper.find(TextField);

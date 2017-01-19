@@ -1,7 +1,7 @@
 import React  from 'react';
 import {TextField} from 'material-ui';
 
-const SearchInput = ({query, onSubmit, onQueryUpdate}) => {
+const WebSearchInput = ({query, onSubmit, onQueryUpdate}) => {
     const handleKeyDown = (event) => {
         const ENTER_KEY = 13;
         if (event.keyCode === ENTER_KEY) {
@@ -21,10 +21,10 @@ const SearchInput = ({query, onSubmit, onQueryUpdate}) => {
 
 };
 
-SearchInput.propTypes = {
+WebSearchInput.propTypes = {
     query: React.PropTypes.string.isRequired,
     onSubmit: React.PropTypes.func.isRequired,
     onQueryUpdate: React.PropTypes.func.isRequired
 };
 
-export default SearchInput;
+export default WebSearchInput;

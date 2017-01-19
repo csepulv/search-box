@@ -17,31 +17,22 @@ module.exports = {
         new CopyWebpackPlugin([
 
             // {output}/to/file.txt
-            {from: './colors.js', to: '../../web/src/colors.js'},
             {from: './crayola.json', to: '../../web/src/crayola.json'},
-            {from: './ColorListItem.js', to: '../../web/src/ColorListItem.js'},
-            {from: './SearchBox.js', to: '../../web/src/SearchBox.js'},
-            {from: './SearchResults.js', to: '../../web/src/SearchResults.js'},
-            {from: './SearchInput.js', to: '../../web/src/SearchInput.js'},
+            {from: './colors.js', to: '../../web/src/colors.js'},
 
-            {from: './SearchBox.js', to: '../../github-web/src/SearchBox.js'},
-            {from: './SearchResults.js', to: '../../github-web/src/SearchResults.js'},
-            {from: './SearchInput.js', to: '../../github-web/src/SearchInput.js'},
+            {from: './SearchBox.js', to: '../../web/src/'},
+            {from: './Web*.js', to: '../../web/src/', flatten:true},
 
-
-            // Copy directory contents to {output}/to/directory/
-            // { from: 'from/directory', to: 'to/directory' },
-
-            // Copy glob results (with dot files) to /absolute/path/
-            // {
-            //     from: {
-            //         glob:'from/directory/**/*',
-            //         dot: true
-            //     },
-            //     to: '/absolute/path'
-            // },
+            {from: './SearchBox.js', to: '../../github-web/src/'},
+            {from: './Web*.js', to: '../../github-web/src', flatten:true},
 
         ], {
+
+            ignore: [
+                // Doesn't copy any files with a txt extension
+                '*.test.js',
+                '*.config.js',
+            ],
 
             // By default, we only copy modified files during
             // a watch or webpack-dev-server build. Setting this
