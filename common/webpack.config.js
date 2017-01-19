@@ -33,6 +33,10 @@ module.exports = {
             {from: './SearchBox.js', to: '../../color-mobile/'},
             {from: './Mobile*.js', to: '../../color-mobile/', flatten:true},
 
+            {from: './SearchBox.js', to: '../../github-mobile/'},
+            {from: './Mobile*.js', to: '../../github-mobile/', flatten:true},
+
+
         ], {
 
             ignore: [

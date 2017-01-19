@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 
-import {observer} from 'mobx-react';
-
 const SearchBox = (SearchFrame, SearchInput, SearchResults) => {
-    return observer(class extends Component {
+    return class extends Component {
         static propTypes = {
             searchStore: React.PropTypes.object.isRequired
         };
@@ -19,7 +17,7 @@ const SearchBox = (SearchFrame, SearchInput, SearchResults) => {
                 </SearchFrame>
             );
         }
-    });
+    };
 };
 
 

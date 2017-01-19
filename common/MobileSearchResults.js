@@ -7,11 +7,6 @@ import {
     Text
 } from 'react-native';
 const styles = StyleSheet.create({
-    row: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        padding: 10
-    },
     separator: {
         flex: 1,
         height: 1,

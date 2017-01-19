@@ -11,6 +11,7 @@ import WebSearchInput from './WebSearchInput';
 import WebSearchResults from './WebSearchResults';
 
 import SearchBox from './SearchBox'
+import {observer} from 'mobx-react';
 
 const WebSearchFrame = ({children}) => {
     return (
@@ -22,6 +23,6 @@ const WebSearchFrame = ({children}) => {
     );
 };
 
-const WebSearchBox = ListItem => SearchBox(WebSearchFrame, WebSearchInput, WebSearchResults(ListItem));
+const WebSearchBox = ListItem => observer(SearchBox(WebSearchFrame, WebSearchInput, WebSearchResults(ListItem)));
 
 export default WebSearchBox

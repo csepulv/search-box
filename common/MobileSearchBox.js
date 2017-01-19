@@ -5,6 +5,12 @@ import {
     View,
 } from 'react-native';
 
+import {observer} from 'mobx-react/native';
+
+import MobileSearchInput from './MobileSearchInput';
+import MobileSearchResults from './MobileSearchResults';
+
+import SearchBox from './SearchBox'
 
 const styles = StyleSheet.create({
     container: {
@@ -14,11 +20,6 @@ const styles = StyleSheet.create({
     }
 });
 
-import MobileSearchInput from './MobileSearchInput';
-import MobileSearchResults from './MobileSearchResults';
-
-import SearchBox from './SearchBox'
-
 const MobileSearchFrame = ({children}) => {
     return (
         <View style={styles.container}>
@@ -27,6 +28,6 @@ const MobileSearchFrame = ({children}) => {
     );
 };
 
-const MobileSearchBox = ListItem => SearchBox(MobileSearchFrame, MobileSearchInput, MobileSearchResults(ListItem));
+const MobileSearchBox = ListItem => observer(SearchBox(MobileSearchFrame, MobileSearchInput, MobileSearchResults(ListItem)));
 
 export default MobileSearchBox

@@ -9,13 +9,15 @@ const MobileSearchInput = ({query, onSubmit, onQueryUpdate}) => {
             onChangeText={(text) => onQueryUpdate(text)}
             value={query}
             returnKeyType={'search'}
+            autoCapitalize={'none'}
+            autoCorrect={false}
             onSubmitEditing={() => onSubmit()}
         />
     );
 
 };
 
-WebSearchInput.propTypes = {
+MobileSearchInput.propTypes = {
     query: React.PropTypes.string.isRequired,
     onSubmit: React.PropTypes.func.isRequired,
     onQueryUpdate: React.PropTypes.func.isRequired
