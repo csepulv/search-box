@@ -24,6 +24,10 @@ module.exports = {
             {from: './SearchResults.js', to: '../../web/src/SearchResults.js'},
             {from: './SearchInput.js', to: '../../web/src/SearchInput.js'},
 
+            {from: './SearchBox.js', to: '../../github-web/src/SearchBox.js'},
+            {from: './SearchResults.js', to: '../../github-web/src/SearchResults.js'},
+            {from: './SearchInput.js', to: '../../github-web/src/SearchInput.js'},
+
 
             // Copy directory contents to {output}/to/directory/
             // { from: 'from/directory', to: 'to/directory' },

@@ -1,0 +1,24 @@
+{
+  "name": "search-box-web",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "fetch-mock": "^5.8.1",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "material-ui": "^0.16.6",
+    "mobx": "^3.0.0",
+    "mobx-react": "^4.1.0",
+    "qs": "^6.3.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
