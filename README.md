@@ -1,9 +1,18 @@
 #Search Box
 
-There are tags for the incremental development of the applications. Their order:
-* [bootstrap](https://github.com/csepulv/search-box/tree/bootstrap)
-* [web-initial-search](https://github.com/csepulv/search-box/tree/web-initial-search)
-* [web-mobx](https://github.com/csepulv/search-box/tree/web-mobx)
-* [mobile-search](https://github.com/csepulv/search-box/tree/mobile-search)
-* [smoke-tests](https://github.com/csepulv/search-box/tree/smoke-tests)
-* [common](https://github.com/csepulv/search-box/tree/common)
+This repo contains the code for the Medium tutorial
+
+##Code Reuse using Higher Order (HOC) and Stateless Functional Components in React and React Native
+ 
+
+The main branches are:
+
+###master
+contains the final, refactored applications and reusable components
+
+### [mobile-search-update](https://github.com/csepulv/search-box/tree/mobile-search-update)
+Contains README details for bootstrapping and building the initial React/web and React Native/mobile color search apps.
+
+
+###[mobile-update](https://github.com/csepulv/search-box/tree/mobile-update)
+Contains README details and incremental refactorings to prepare components for reuse in a second set of applications.
