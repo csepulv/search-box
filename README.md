@@ -61,7 +61,8 @@ export default MobileSearchInput;
 
 and finally, `MobileSearchResults.js`
 
-```import React, {Component}  from 'react';
+```
+import React, {Component}  from 'react';
 import {
     StyleSheet,
     View,
