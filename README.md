@@ -10,9 +10,9 @@ The main branches are:
 ###master
 contains the final, refactored applications and reusable components
 
-### [mobile-search-update](https://github.com/csepulv/search-box/tree/mobile-search-update)
+### [base-line-apps](https://github.com/csepulv/search-box/tree/baseline-apps)
 Contains README details for bootstrapping and building the initial React/web and React Native/mobile color search apps.
 
 
-###[mobile-update](https://github.com/csepulv/search-box/tree/mobile-update)
+###[refactorings](https://github.com/csepulv/search-box/tree/refactorings)
 Contains README details and incremental refactorings to prepare components for reuse in a second set of applications.
