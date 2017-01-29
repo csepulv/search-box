@@ -1,6 +1,6 @@
 #Search Box
 
-This repo contains the code for the Medium tutorial
+This repo contains the code for the [Medium tutorial](https://hackernoon.com/code-reuse-using-higher-order-hoc-and-stateless-functional-components-in-react-and-react-native-6eeb503c665)
 
 ##Code Reuse using Higher Order (HOC) and Stateless Functional Components in React and React Native
  
