@@ -1,6 +1,6 @@
 #Search Box
 
-This is part of a medium post, which can be found at at [https://medium.com/@csepulv/latest](https://medium.com/@csepulv/latest)
+This is part of a medium post, which can be found [here](https://hackernoon.com/code-reuse-using-higher-order-hoc-and-stateless-functional-components-in-react-and-react-native-6eeb503c665)
 
 The Medium tutorial outlines the main refactorings, but doesn't provide the full details for all the  React Native/mobile elements, as the approach mirrors the React/web components. 
 
